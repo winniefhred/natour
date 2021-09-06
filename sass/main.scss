@@ -1,0 +1,67 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
+@import "components/bg-video";
+@import "components/form";
+
+@import "layout/header";
+@import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
+
+@import "pages/home";
+
+
+
+
+//fontawesome scss
+@import "./scss/fontawesome.scss";
+@import "./scss/solid.scss";
+@import "./scss/regular.scss";
+@import "./scss/brands.scss";
+
+
+
+// @import "./fontawesome/scss/fontawesome.scss";
+// @import "./fontawesome/scss/solid.scss";
+// @import "./fontawesome/scss/brands.scss";
+
+// .user {
+//   @extend %fa-icon;
+//   @extend .fas;
+
+//   &:before {
+//     content: fa-content($fa-var-user);
+//   }
+// }
+
+// .twitter {
+//   @extend %fa-icon;
+//   @extend .fab;
+
+//   &:before {
+//     content: fa-content($fa-var-twitter);
+//   }
+// }
+
+
+
+
+
+
+
+ 
+

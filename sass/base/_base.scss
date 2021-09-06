@@ -1,0 +1,30 @@
+
+html{
+    // this defines what one rem is
+    font-size: 10px ;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing:inherit;
+}
+
+
+body {
+    box-sizing: border-box;
+    font-family: "lato" sans-serif;
+    font-weight: 400;
+    /* font-size: 16px; */
+    line-height: 1.7;
+    color: #777;
+    padding: 3rem; }
+
+
+
+// steps for the hamburger icon
+    /* first is to create a checkbox which will be hidden later
+     2 - have a label connected to that checkbox which is where we click (button)
+     3-reveal the entire navigation here in the background as soon as we click the ckeck button ande we can use the checked pseudo class in css to style it
+    */

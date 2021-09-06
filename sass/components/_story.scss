@@ -1,0 +1,68 @@
+.story{
+  width: 75%;  
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, .1);
+  background-color: rgba($color-white, .6);
+  border-radius: 3px;
+  padding: 6rem;
+  padding-left: 9rem;
+  // added because of the translate -3rem to add more space
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+
+
+  &__shape{
+      width: 15rem;
+      height: 15rem;
+      float: left;
+      shape-outside: circle(50% at 50% 50%);
+      // the first figure is the radius and is half the height and width of the element, and at 50% 50% is the center of the circle vertically and horizontally
+      clip-path: circle(50% at 50% 50%);
+      transform: translateX(-3rem) skewX(12deg);
+      // using translate will give it space between the circle and the text
+      position: relative;
+
+  }
+
+   &__img{
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  // this transform property made the img centered
+  transition: all .5s;
+    }
+
+
+  &__text{
+    transform: skewX(12deg);
+}
+
+&__caption{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,0);
+  // translate -50% and 0 makes it comes down
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0;
+//  opacity 0 makes the caption invisible at the intial stage
+ transition: all .5s;
+ backface-visibility: hidden;
+//  solves weird animation error
+}
+
+
+&:hover &__caption{
+  opacity: 1;
+  transform: translate(-50%,-50%);
+  //  brings it to the  middle
+}
+&:hover &__img{
+  transform: translateX(-4rem) scale(1);
+  // scale makes it zooms out when you hover it.
+  filter: blur(3px) brightness(80%);
+  // for brightness any value lower than 100% makes it darker and vice versa
+}
+
+}
